@@ -1,0 +1,133 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cor-primaria);
+    padding: .5rem;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+}
+
+.cabecalho__logo{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1rem;
+}
+
+.cabecalho__logo__titulo{
+    font-family: var(--fonte-titulo);
+    font-size: var(--font-size-subtitulo);
+    font-weight: var(--fonte-peso-titulo);
+    color: var(--cor-titulo);
+}
+
+.cabecalho__navegacao {
+    margin-right: 5rem;
+}
+
+.cabecalho__navegacao__lista {
+    display: flex;
+    gap: 1rem;
+}
+
+.cabecalho__navegacao__lista__item__dropdown{
+    position: relative;
+}
+
+.cabecalho__navegacao__lista__item-dropdown{
+    position: absolute;
+    top: 100%;
+}
+
+.cabecalho__navegacao__lista__item-dropdown{
+    display: none;
+}
+
+.cabecalho__navegacao__lista__item__dropdown .cabecalho__navegacao__lista__item__link:hover > .cabecalho__navegacao__lista__item-dropdown{
+    display: block;
+    cursor: default;
+}
+
+.cabecalho__navegacao__lista__item__link, .cabecalho__navegacao__mobile__lista__item__link {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 500;
+}
+
+.logo {
+    width: 52px;
+    border-radius: 14px;
+    background-color: transparent;
+}
+
+
+.menu__check {
+    display: none;
+}
+
+.menu-hamburguer {
+    display: none;
+
+}
+
+.menu-hamburguer__linha1,
+.menu-hamburguer__linha2,
+.menu-hamburguer__linha3 {
+
+    width: 24px;
+    height: 4px;
+    background: black;
+    border-radius: 24px;
+
+}
+
+.cabecalho__navegacao__mobile__lista {
+    display: none;
+}
+
+.cabecalho__navegacao__mobile__lista__item {
+    padding: 1rem;
+}
+
+.menu__check:checked~.cabecalho__navegacao__mobile__lista {
+    display: block;
+}
+
+.cabecalho__navegacao__mobile {
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .menu-hamburguer {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+    }
+
+    .cabecalho {
+        position: relative;
+    }
+
+    .cabecalho__navegacao {
+        display: none;
+    }
+
+    .cabecalho__navegacao__mobile__lista {
+        background: var(--marrom-terra);
+        position: absolute;
+        right: 0;
+        top: 100%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+}
