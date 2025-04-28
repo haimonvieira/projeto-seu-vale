@@ -58,6 +58,14 @@
 
             <ul class="cabecalho__navegacao__mobile__lista">
 
+                <label for="menu" class="botao-fechar">
+                    <div>
+                        <span class="botao-fechar__linha1"></span>
+                        <span class="botao-fechar__linha2"></span>
+                    </div>
+                </label>
+                
+
                 <li class="cabecalho__navegacao__mobile__lista__item">
                     <a href="#" class="cabecalho__navegacao__mobile__lista__item__link">Home</a>
                 </li>
@@ -75,6 +83,9 @@
                 </li>
 
             </ul>
+
+            <!-- Overlay que cobre a tela quando o menu mobile é aberto -->
+            <div class="menu-overlay"></div>
 
         </nav>
 
@@ -127,11 +138,17 @@
 
         </section>
 
+        <footer class="rodape">
+            <p>&copy; 2025 Seu Bairro. Todos os direitos reservados. Desenvolvido por <a href="#" class="rodape__link">Haimon Vieira</a></p>
+        </footer>
+
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+
+        <script src="scripts/script.js" type="module"></script>
 </body>
 
 </html>

@@ -1,0 +1,29 @@
+
+.rodape{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background: var(--marrom-terra);
+    padding: 0 10rem;
+    text-align: center;
+}
+
+.rodape__link{
+    all: unset;
+    text-decoration: none;
+    font-weight: var(--fonte-peso-subtitulo);
+}
+
+@media screen and (max-width: 768px) {
+    .rodape{
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .rodape{
+        padding: 0 1rem;
+    }
+}
+
