@@ -3,10 +3,12 @@
 
 @import url('reset.css');
 @import url('cabecalho.css');
-
+@import url('banner.css');
+@import url('acesso-rapido.css');
 :root{
 
     --cor-primaria: #2E8B57;
+    --cor-banner: #e8f5e9;
     --cor-botao: #4682B4;
     --cor-de-fundo-neutro: #F8F8FF;
     --cor-titulo: #DAA520;
