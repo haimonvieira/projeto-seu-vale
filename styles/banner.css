@@ -66,3 +66,37 @@
 .banner__botoes__botao--cor-verde{
     color: var(--cor-primaria);
 }
+
+@media screen and (max-width: 768px) {
+    .banner{
+        padding: 2rem 1rem;
+    }
+    .banner__imagem__img{
+        width: 100%;
+    }
+    .banner__botoes{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .banner__botoes__botao{
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .banner__descricao__titulo{
+        font-size: 2rem;
+    }
+    .banner__descricao__texto{
+        font-size: 1rem;
+    }
+    .banner__botoes__botao{
+        padding: .5rem;
+    }
+
+    .banner__imagem__img{
+        display: none;
+    }
+}
