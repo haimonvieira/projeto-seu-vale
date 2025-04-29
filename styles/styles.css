@@ -6,6 +6,7 @@
 @import url('banner.css');
 @import url('acesso-rapido.css');
 @import url('rodape.css');
+@import url('listagem-servicos.css');
 
 :root{
 
@@ -43,4 +44,11 @@ body{
 
 .body-sem-rolagem{
     overflow: hidden;
+}
+
+.separador-conteudo{
+    margin: 0 auto;
+    width: 80%;
+    height: 2px;
+    background: var(--cor-primaria);
 }

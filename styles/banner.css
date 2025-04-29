@@ -6,7 +6,7 @@
     align-items: center;
     background: var(--cor-banner);
     width: 100%;
-    min-height: 30vh;
+    min-height: max-content;
     padding: 2rem 10rem;
 }
 

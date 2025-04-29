@@ -24,6 +24,8 @@
     animation-fill-mode: forwards;
     animation-delay: 1s;
     transition: all .3s ease-in-out;
+    width: max-content;
+
 }
 
 .acesso-rapido__conteudo:hover{
@@ -46,6 +48,18 @@
     font-weight: 500;
 }
 
+.acesso-rapido__conteudo__imagem{
+    width: 100%;
+    height: max-content;
+    border-radius: 6px;
+}
+
+.servico{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
 @keyframes fadeInleft{
     0% {
         visibility: hidden;
@@ -64,8 +78,12 @@
         padding: 2rem 1rem;
     }
     .acesso-rapido__conteudo{
-        width: 100%;
+        width: 70%;
         padding: 1rem;
+    }
+
+    .servico{
+        display: flex;
     }
     
 }

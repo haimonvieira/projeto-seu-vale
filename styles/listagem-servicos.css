@@ -1,0 +1,16 @@
+.listagem-servicos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 10rem;
+}
+
+.listagem-servicos__conteudo__titulo{
+    width: max-content;
+    font-size: var(--font-size-subtitulo);
+    font-family: var(--fonte-subtitulo);
+    font-weight: var(--fonte-peso-subtitulo);
+    color: var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-primaria);
+    padding-bottom: 1rem;
+}
