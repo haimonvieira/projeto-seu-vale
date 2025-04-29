@@ -49,6 +49,8 @@
     padding: 1rem;
     border-radius: 6px;
     font-weight: 500;
+    width: 100%;
+    text-align: center;
 }
 
 .acesso-rapido__conteudo__imagem{
