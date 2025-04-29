@@ -8,7 +8,8 @@
     height: 10vh;
     position: fixed;
     top: 0;
-    box-shadow:  0 1px 2px 1px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 .cabecalho__logo {
@@ -38,11 +39,16 @@
     font-weight: 500;
 }
 
+.cabecalho__navegacao__lista__item__link:hover{
+    color: rgba(255, 255, 255, .7);
+}
+
 .logo {
     width: 52px;
     border-radius: 14px;
     background-color: transparent;
 }
+
 
 .menu__check {
     display: none;
@@ -75,9 +81,10 @@
     width: 40%;
     height: 100%;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
     z-index: 2;
-    transition: transform 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    animation: slideInRight 0.3s ease-in-out;
 }
 
 .cabecalho__navegacao__mobile__lista__item {
@@ -88,7 +95,7 @@
     display: flex;
 }
 
-.menu__check:checked ~ .menu-overlay{
+.menu__check:checked~.menu-overlay {
     display: block;
 }
 
@@ -96,7 +103,7 @@
     display: none;
 }
 
-.menu-overlay{
+.menu-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -105,10 +112,11 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
     display: none;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 /*Para que o X possa rodar no seu proprio eixo */
-.botao-fechar{
+.botao-fechar {
     width: 100%;
     cursor: pointer;
     position: relative;
@@ -119,7 +127,8 @@
     margin-left: 1rem;
 }
 
-.botao-fechar__linha1, .botao-fechar__linha2{
+.botao-fechar__linha1,
+.botao-fechar__linha2 {
     width: 24px;
     height: 4px;
     background: black;
@@ -129,12 +138,50 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.botao-fechar__linha1{
+.botao-fechar__linha1 {
     transform: rotate(45deg);
 }
-.botao-fechar__linha2{
+
+.botao-fechar__linha2 {
     transform: rotate(-45deg);
-}   
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideOutRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
 
 @media screen and (max-width: 768px) {
 
