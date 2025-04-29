@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Bairro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <div class="cabecalho__logo">
+            <h2 class="cabecalho__logo__titulo">Seu Bairro</h2>
+            <img class="cabecalho__logo logo" src="images/logo_vale.jpeg" alt="">
+        </div>
+
+        <!-- navegacao desktop -->
+        <nav class="cabecalho__navegacao">
+
+            <ul class="cabecalho__navegacao__lista">
+
+                <li class="cabecalho__navegacao__lista__item">
+                    <a href="index.html" class="cabecalho__navegacao__lista__item__link">Home</a>
+                </li>
+
+                <li class="cabecalho__navegacao__lista__item">
+                    <a href="servicos.html" class="cabecalho__navegacao__lista__item__link">Serviços</a>
+                </li>
+
+                <li class="cabecalho__navegacao__lista__item">
+                    <a href="eventos.html" class="cabecalho__navegacao__lista__item__link">Eventos</a>
+                </li>
+
+                <li class="cabecalho__navegacao__lista__item">
+                    <a href="contato.html" class="cabecalho__navegacao__lista__item__link">Contato</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- navegacao mobile -->
+        <nav class="cabecalho__navegacao__mobile">
+
+            <input type="checkbox" id="menu" class="menu__check">
+            <label for="menu">
+                <div class="menu-hamburguer">
+                    <span class="menu-hamburguer__linha1"></span>
+                    <span class="menu-hamburguer__linha2"></span>
+                    <span class="menu-hamburguer__linha3"></span>
+                </div>
+            </label>
+
+            <ul class="cabecalho__navegacao__mobile__lista">
+
+                <label for="menu" class="botao-fechar">
+                    <div>
+                        <span class="botao-fechar__linha1"></span>
+                        <span class="botao-fechar__linha2"></span>
+                    </div>
+                </label>
+
+
+                <li class="cabecalho__navegacao__mobile__lista__item">
+                    <a href="index.html" class="cabecalho__navegacao__mobile__lista__item__link">Home</a>
+                </li>
+
+                <li class="cabecalho__navegacao__mobile__lista__item">
+                    <a href="servicos.html" class="cabecalho__navegacao__mobile__lista__item__link">Serviços</a>
+                </li>
+
+                <li class="cabecalho__navegacao__mobile__lista__item">
+                    <a href="eventos.html" class="cabecalho__navegacao__mobile__lista__item__link">Eventos</a>
+                </li>
+
+                <li class="cabecalho__navegacao__mobile__lista__item">
+                    <a href="contato.html" class="cabecalho__navegacao__mobile__lista__item__link">Contato</a>
+                </li>
+
+            </ul>
+
+            <!-- Overlay que cobre a tela quando o menu mobile é aberto -->
+            <div class="menu-overlay"></div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="banner">
+
+            <div class="banner__texto">
+                <div class="banner__descricao">
+                    <h1 class="banner__descricao__titulo">Entre em Contato</h1>
+                </div>
+
+                <div class="banner__descricao__texto">
+                    <p class="banner__descricao">Tem alguma sugestão, dúvida ou quer cadastrar um serviço/evento? Fale
+                        conosco!</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="formulario">
+
+            <form class="formulario__container">
+
+                <div class="formulario__container__conteudo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                </div>
+
+                <div class="formulario__container__conteudo">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                </div>
+
+                <div class="formulario__container__conteudo">
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                </div>
+
+                <button type="submit" class="formulario__container__botao">Enviar</button>
+            </form>
+
+        </section>
+
+        <footer class="rodape">
+            <p class="rodape__texto">&copy; 2025 Seu Bairro. Todos os direitos reservados. Desenvolvido por <a href="#"
+                    class="rodape__link">Haimon Vieira</a></p>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
