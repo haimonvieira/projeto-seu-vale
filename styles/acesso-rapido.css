@@ -45,6 +45,9 @@
 
 .acesso-rapido__conteudo__botao{
     text-decoration: none;
+    border: 1px solid var(--cor-primaria);
+    padding: 1rem;
+    border-radius: 6px;
     font-weight: 500;
 }
 
@@ -73,17 +76,27 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .acesso-rapido{
+        padding: 2rem 5rem;
+    }
+    .acesso-rapido__conteudo{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .acesso-rapido{
         padding: 2rem 1rem;
     }
     .acesso-rapido__conteudo{
-        width: 70%;
         padding: 1rem;
+        width: 100%;
     }
 
     .servico{
         display: flex;
+        width: 100%;
     }
     
 }
