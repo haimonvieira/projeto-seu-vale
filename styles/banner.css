@@ -8,6 +8,7 @@
     width: 100%;
     min-height: 30vh;
     padding: 2rem 10rem;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .banner__imagem__img{
@@ -83,6 +84,15 @@
         text-align: center;
     }
     
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 480px) {

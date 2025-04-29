@@ -30,9 +30,17 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: var(--fonte-texto);
     font-size: var(--font-size-texto);
     background: var(--cor-de-fundo-neutro);
-    font-weight: var(--fonte-peso-padrao);
+    font-weight: var(--fonte-peso-padrao);    
+}
+
+.body-sem-rolagem{
+    overflow: hidden;
 }

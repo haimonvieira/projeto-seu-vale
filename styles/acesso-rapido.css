@@ -18,8 +18,16 @@
     border: 2px solid #bdbdbd;
     border-radius: 6px;
     box-shadow:  0 1px 2px 1px rgba(0, 0, 0, 0.3);
-
+    transition: all .3s ease-in-out;
 }
+
+.acesso-rapido__conteudo:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all .3s ease-in-out;
+    transform: translateY(5px);
+}
+
+
 
 .acesso-rapido__conteudo__titulo{
     font-family: var(--fonte-titulo);
