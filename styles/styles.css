@@ -8,6 +8,9 @@
 @import url('rodape.css');
 @import url('listagem-servicos.css');
 @import url('formulario.css');
+@import url('filtro.css');
+@import url('eventos.css');
+@import url('paginacao.css');
 
 :root{
 
@@ -48,8 +51,13 @@ body{
 }
 
 .separador-conteudo{
-    margin: 0 auto;
+    margin: 1rem auto;
     width: 80%;
     height: 2px;
     background: var(--cor-primaria);
+    border-radius: 24px;
+}
+
+.fundo-verde{
+    background: #e8f5e9;
 }

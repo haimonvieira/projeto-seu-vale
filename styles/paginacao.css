@@ -1,0 +1,22 @@
+
+.paginacao{
+    width: 100%;
+    text-align: center;
+}
+
+.paginacao__controle{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.paginacao__controle__botao{
+    text-decoration: none;
+    color: rgba(0, 0, 0, .7);
+    font-weight: 400;
+    border: 2px solid var(--cor-primaria);
+    padding: .5rem 1rem;
+    border-radius: 6px;
+}

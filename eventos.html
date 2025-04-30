@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Bairro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <div class="cabecalho__logo">
+            <h2 class="cabecalho__logo__titulo">Seu Bairro</h2>
+            <img class="cabecalho__logo logo" src="images/logo_vale.jpeg" alt="">
+        </div>
+
+        <!-- navegacao desktop -->
+        <nav class="cabecalho__navegacao">
+
+            <ul class="cabecalho__navegacao__lista">
+
+                <li class="cabecalho__navegacao__lista__item">
+                    <a href="index.html" class="cabecalho__navegacao__lista__item__link">Home</a>
+                </li>
+
+                <li class="cabecalho__navegacao__lista__item">
+                    <a href="servicos.html" class="cabecalho__navegacao__lista__item__link">Serviços</a>
+                </li>
+
+                <li class="cabecalho__navegacao__lista__item">
+                    <a href="eventos.html" class="cabecalho__navegacao__lista__item__link">Eventos</a>
+                </li>
+
+                <li class="cabecalho__navegacao__lista__item">
+                    <a href="contato.html" class="cabecalho__navegacao__lista__item__link">Contato</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- navegacao mobile -->
+        <nav class="cabecalho__navegacao__mobile">
+
+            <input type="checkbox" id="menu" class="menu__check">
+            <label for="menu">
+                <div class="menu-hamburguer">
+                    <span class="menu-hamburguer__linha1"></span>
+                    <span class="menu-hamburguer__linha2"></span>
+                    <span class="menu-hamburguer__linha3"></span>
+                </div>
+            </label>
+
+            <ul class="cabecalho__navegacao__mobile__lista">
+
+                <label for="menu" class="botao-fechar">
+                    <div>
+                        <span class="botao-fechar__linha1"></span>
+                        <span class="botao-fechar__linha2"></span>
+                    </div>
+                </label>
+
+
+                <li class="cabecalho__navegacao__mobile__lista__item">
+                    <a href="index.html" class="cabecalho__navegacao__mobile__lista__item__link">Home</a>
+                </li>
+
+                <li class="cabecalho__navegacao__mobile__lista__item">
+                    <a href="servicos.html" class="cabecalho__navegacao__mobile__lista__item__link">Serviços</a>
+                </li>
+
+                <li class="cabecalho__navegacao__mobile__lista__item">
+                    <a href="eventos.html" class="cabecalho__navegacao__mobile__lista__item__link">Eventos</a>
+                </li>
+
+                <li class="cabecalho__navegacao__mobile__lista__item">
+                    <a href="contato.html" class="cabecalho__navegacao__mobile__lista__item__link">Contato</a>
+                </li>
+
+            </ul>
+
+            <!-- Overlay que cobre a tela quando o menu mobile é aberto -->
+            <div class="menu-overlay"></div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="banner">
+
+            <div class="banner__texto">
+                <div class="banner__descricao">
+                    <h1 class="banner__descricao__titulo">Calendário de Eventos</h1>
+                </div>
+
+                <div class="banner__descricao__texto">
+                    <p class="banner__descricao">Fique por dentro dos eventos do bairro!</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="filtro">
+
+            <div class="separador-conteudo"></div>
+
+            <div class="filtro__conteudo">
+
+                <div class="filtro__conteudo__data">
+                    <label for="filtro-data" class="filtro__conteudo__data__titulo">Filtrar por data:</label>
+                    <select class="filtro__conteudo__data__option" id="filtro-data">
+                        <option value="hoje">Todos os eventos</option>
+                        <option value="hoje">Hoje</option>
+                        <option value="semanal">Próximos 7 dias</option>
+                        <option value="mensal">Este mês</option>
+                    </select>
+                </div>
+
+                <div class="filtro__conteudo__botoes">
+                    <a class="filtro__conteudo__botao filtro__conteudo__botao--fundo-verde" href="#">Ver em Lista</a>
+                    <a class="filtro__conteudo__botao filtro__conteudo__botao--fundo-branco" href="#">Ver em
+                        Calendário</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="eventos lista">
+
+            <div class="eventos__conteudo">
+
+                <h2 class="eventos__conteudo__data">
+                    <p>Dia</p>
+                    <p>Mes</p>
+                </h2>
+
+                <div class="eventos__conteudo__apresentacao">
+                    <h3 class="eventos__conteudo__titulo">Nome Evento</h3>
+
+                    <div class="eventos__conteudo__apresentacao__horario-evento">
+                        <p class="eventos__conteudo__local">Local do evento</p>
+                        <p class="eventos__conteudo__horario">Horário do evento</p>
+                    </div>
+
+                    <p class="eventos__conteudo__descricao">Descricao do evento</p>
+                    <a href="#" class="eventos__conteudo__botao">Ver Detalhes</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="paginacao">
+
+            <div class="paginacao__controle">
+                <a href="#" class="paginacao__controle__botao">Anterior</a>
+                <a href="#" class="paginacao__controle__botao">1</a>
+                <a href="#" class="paginacao__controle__botao">2</a>
+                <a href="#" class="paginacao__controle__botao">Próximo</a>
+            </div>
+
+        </section>
+
+        <footer class="rodape">
+            <p class="rodape__texto">&copy; 2025 Seu Bairro. Todos os direitos reservados. Desenvolvido por <a href="#"
+                    class="rodape__link">Haimon Vieira</a></p>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
