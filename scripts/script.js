@@ -12,3 +12,23 @@ menu__check.addEventListener("click", () => {
     }
 
 });
+
+
+//Adicionar a classe ativo ao link clicado
+document.addEventListener("DOMContentLoaded", () => {
+
+    //Pegar todos os links da navegação
+    const links = document.querySelectorAll('.cabecalho__navegacao__lista__item__link');
+
+    //Para cada link da navegação
+    links.forEach(link => {
+
+        //Se o link clicado for o link atual
+        if(link.href === window.location.href){
+            //Adicionar a classe ativo ao link clicado
+            link.classList.add('ativo');
+        }
+
+    });
+
+});

@@ -108,18 +108,6 @@
     
 }
 
-@keyframes slideInLeft{
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
 @media screen and (max-width: 480px) {
     .banner__descricao__titulo{
         font-size: 2rem;

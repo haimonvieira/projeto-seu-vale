@@ -69,6 +69,10 @@
     border: none;
 }
 
+.listagem-servicos__busca__input{
+    display: flex;
+}
+
 @media screen and (max-width: 768px){
 
     .listagem-servicos__conteudo__titulo{

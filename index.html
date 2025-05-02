@@ -15,8 +15,10 @@
     <header class="cabecalho">
 
         <div class="cabecalho__logo">
-            <h2 class="cabecalho__logo__titulo">Seu Bairro</h2>
-            <img class="cabecalho__logo logo" src="images/logo_vale.jpeg" alt="">
+            <a class="cabecalho__logo__link" href="index.html">
+                <h2 class="cabecalho__logo__titulo">Seu Bairro</h2>
+                <img class="cabecalho__logo logo" src="images/logo_vale.jpeg" alt="">
+            </a>
         </div>
 
         <!-- navegacao desktop -->
@@ -25,7 +27,7 @@
             <ul class="cabecalho__navegacao__lista">
 
                 <li class="cabecalho__navegacao__lista__item">
-                    <a href="index.html" class="cabecalho__navegacao__lista__item__link">Home</a>
+                    <a href="index.html" class="cabecalho__navegacao__lista__item__link ativo">Home</a>
                 </li>
 
                 <li class="cabecalho__navegacao__lista__item">
@@ -65,7 +67,6 @@
                     </div>
                 </label>
 
-
                 <li class="cabecalho__navegacao__mobile__lista__item">
                     <a href="index.html" class="cabecalho__navegacao__mobile__lista__item__link">Home</a>
                 </li>
@@ -81,6 +82,13 @@
                 <li class="cabecalho__navegacao__mobile__lista__item">
                     <a href="contato.html" class="cabecalho__navegacao__mobile__lista__item__link">Contato</a>
                 </li>
+
+                <p class="cabecalho__navegacao__mobile__lista__item__texto">
+                    Desenvolvido por:
+                    <a href="https://github.com/haimonvieira">
+                        <img class="logo desenvolvedor" src="images/logo-dev.jpeg" alt="">
+                    </a>
+                </p>
 
             </ul>
 
@@ -108,8 +116,10 @@
                 </div>
 
                 <div class="banner__botoes">
-                    <a href="servicos.html" class="banner__botoes__botao banner__botoes__botao--fundo-verde">Explorar Serviços</a>
-                    <a href="eventos.html" class="banner__botoes__botao banner__botoes__botao--cor-verde">Ver Eventos</a>
+                    <a href="servicos.html" class="banner__botoes__botao banner__botoes__botao--fundo-verde">Explorar
+                        Serviços</a>
+                    <a href="eventos.html" class="banner__botoes__botao banner__botoes__botao--cor-verde">Ver
+                        Eventos</a>
                 </div>
 
             </div>
@@ -139,8 +149,8 @@
         </section>
 
         <footer class="rodape">
-            <p class="rodape__texto">&copy; 2025 Seu Bairro. Todos os direitos reservados. Desenvolvido por <a href="#"
-                    class="rodape__link">Haimon Vieira</a></p>
+            <p class="rodape__texto">&copy; 2025 Seu Bairro. Todos os direitos reservados. Desenvolvido por <a
+                    href="https://github.com/haimonvieira" class="rodape__link">Haimon Vieira</a></p>
         </footer>
 
     </main>

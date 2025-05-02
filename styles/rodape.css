@@ -19,6 +19,7 @@
     all: unset;
     text-decoration: none;
     font-weight: var(--fonte-peso-subtitulo);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

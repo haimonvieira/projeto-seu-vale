@@ -15,8 +15,10 @@
     <header class="cabecalho">
 
         <div class="cabecalho__logo">
-            <h2 class="cabecalho__logo__titulo">Seu Bairro</h2>
-            <img class="cabecalho__logo logo" src="images/logo_vale.jpeg" alt="">
+            <a class="cabecalho__logo__link" href="index.html">
+                <h2 class="cabecalho__logo__titulo">Seu Bairro</h2>
+                <img class="cabecalho__logo logo" src="images/logo_vale.jpeg" alt="">
+            </a>
         </div>
 
         <!-- navegacao desktop -->
@@ -82,6 +84,13 @@
                     <a href="contato.html" class="cabecalho__navegacao__mobile__lista__item__link">Contato</a>
                 </li>
 
+                <p class="cabecalho__navegacao__mobile__lista__item__texto">
+                    Desenvolvido por:
+                    <a href="https://github.com/haimonvieira">
+                        <img class="logo desenvolvedor" src="images/logo-dev.jpeg" alt="">
+                    </a>
+                </p>
+
             </ul>
 
             <!-- Overlay que cobre a tela quando o menu mobile é aberto -->
@@ -139,7 +148,7 @@
 
             <div class="listagem-servicos__busca">
                 <label for="buscar-servico" class="listagem-servicos__label">Busque o Serviço aqui</label>
-                <input type="text" name="busca" id="buscar-servico">
+                <input type="text" name="busca" id="buscar-servico" placeholder="Digite o nome do serviço">
             </div>
 
             <div class="listagem-servicos__fundo">
@@ -191,8 +200,8 @@
         </section>
 
         <footer class="rodape">
-            <p class="rodape__texto">&copy; 2025 Seu Bairro. Todos os direitos reservados. Desenvolvido por <a href="#"
-                    class="rodape__link">Haimon Vieira</a></p>
+            <p class="rodape__texto">&copy; 2025 Seu Bairro. Todos os direitos reservados. Desenvolvido por <a
+                    href="https://github.com/haimonvieira" class="rodape__link">Haimon Vieira</a></p>
         </footer>
 
     </main>

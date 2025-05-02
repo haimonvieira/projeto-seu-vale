@@ -1,6 +1,10 @@
 .eventos{
+    display: flex;
+    flex-direction: column;
     padding: 2rem 10rem;
     width: 100%;
+    gap: 2rem;
+    animation: slideInLeft .8s ease-in-out;
 }
 
 .eventos__conteudo{

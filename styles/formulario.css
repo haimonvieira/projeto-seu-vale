@@ -1,4 +1,7 @@
 
+.formulario{
+    animation: slideInLeft 1s ease-in-out;
+}
 .formulario__container{
     display: flex;
     flex-direction: column;
