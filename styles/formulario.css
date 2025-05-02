@@ -53,9 +53,21 @@
     font-weight: bold;
 }
 
+.formulario__container__select{
+    width: 100%;
+    border-radius: 6px;
+    padding: .5rem;
+    background-color: #fff;
+    color: #000;
+}
+
 @media screen and (max-width: 768px){
     .formulario__container__botao{
         width: 100%;
+    }
+
+    .formulario__container{
+        width: 80vw;
     }
 }
 

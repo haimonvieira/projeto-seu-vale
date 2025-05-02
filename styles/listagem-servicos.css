@@ -61,7 +61,29 @@
     border-radius: 10px;
     border: 1px solid black;
     padding: 1rem;
+    width: 100%;
+    /* background-image: url('../images/icons/search.png');
+    background-position: right 1rem center;
+    background-size: 32px 32px;
+    background-repeat: no-repeat; */
+
+}
+
+.listagem-servicos__busca__input{
     width: 80%;
+    position: relative;
+}
+
+.listagem-servicos__botao{
+    all: unset;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.listagem-servicos__botao img{
+    width: 26px;
 }
 
 .listagem-servicos__busca input:focus{
@@ -69,9 +91,6 @@
     border: none;
 }
 
-.listagem-servicos__busca__input{
-    display: flex;
-}
 
 @media screen and (max-width: 768px){
 

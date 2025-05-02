@@ -63,6 +63,16 @@
     font-weight: 500;
 }
 
+.eventos__conteudo__data__dia{
+    font-size: 2rem;
+}
+
+.eventos__conteudo__data__mes{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    word-wrap: break-word;
+}
+
 @media screen and (max-width: 768px){
 
     .eventos{
