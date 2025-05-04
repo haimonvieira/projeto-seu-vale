@@ -46,6 +46,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -62,11 +63,6 @@
     border: 1px solid black;
     padding: 1rem;
     width: 100%;
-    /* background-image: url('../images/icons/search.png');
-    background-position: right 1rem center;
-    background-size: 32px 32px;
-    background-repeat: no-repeat; */
-
 }
 
 .listagem-servicos__busca__input{
@@ -96,6 +92,14 @@
 
     .listagem-servicos__conteudo__titulo{
         width: 100%;
+    }
+
+    .listagem-servicos__busca__input{
+        width: 100%;
+    }
+
+    .listagem-servicos__busca__input input{
+        padding: 1rem .1rem;
     }
 
     .listagem-servicos{
