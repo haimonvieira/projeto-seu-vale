@@ -61,6 +61,21 @@
     color: #000;
 }
 
+.formulario__container__conteudo span{
+    display: none;
+}
+
+.formulario__container__conteudo--erro input, .formulario__container__conteudo--erro textarea{
+    border: 2px solid red;
+}
+
+.formulario__container__conteudo--erro span{
+    color: red;
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+}
+
 @media screen and (max-width: 768px){
     .formulario__container__botao{
         width: 100%;

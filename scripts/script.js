@@ -1,6 +1,7 @@
+import { validarFormulario } from "./modules/formulario.js";
+
 const body = document.querySelector("body");
 const menu__check = document.querySelector(".menu__check");
-const navegacaoMobileLista = document.querySelector(".cabecalho__navegacao__mobile__lista");
 
 
 menu__check.addEventListener("click", () => {
@@ -32,3 +33,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+document.addEventListener('DOMContentLoaded', validarFormulario);
