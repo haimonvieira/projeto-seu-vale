@@ -67,7 +67,6 @@
                     </div>
                 </label>
 
-
                 <li class="cabecalho__navegacao__mobile__lista__item">
                     <a href="index.html" class="cabecalho__navegacao__mobile__lista__item__link">Home</a>
                 </li>
@@ -102,65 +101,16 @@
 
     <main>
 
-        <section class="banner">
+        <div class="agradecimento">
 
-            <div class="banner__texto">
-                <div class="banner__descricao">
-                    <h1 class="banner__descricao__titulo">Entre em Contato</h1>
-                </div>
+            <div class="agradecimento__container">
 
-                <div class="banner__descricao__texto">
-                    <p class="banner__descricao">Tem alguma sugestão, dúvida ou quer cadastrar um serviço/evento? Fale
-                        conosco!</p>
-                </div>
+                <h1 class="agradecimento__container__titulo">Obrigado(a)! Sua mensagem foi enviada com sucesso.</h1>
+                <p class="agradecimento__container__texto">Em breve entraremos em contato para responder às suas dúvidas ou informações solicitadas. Agradecemos o seu interesse!</p>
 
             </div>
 
-        </section>
-
-        <section class="formulario">
-
-            <form action="https://formsubmit.co/6368c359895a40f7dfdd23a84d9a5886" class="formulario__container"
-                method="POST">
-
-                <div class="formulario__container__conteudo">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu Nome">
-                    <span></span>
-                </div>
-
-                <div class="formulario__container__conteudo">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Seu Email">
-                    <span></span>
-                </div>
-
-                <div class="formulario__container__conteudo">
-                    <label for="categoria">Categoria</label>
-                    <select class="formulario__container__select" name="categoria" id="categoria">
-                        <option value="sugestao">Sugestão</option>
-                        <option value="duvida">Dúvida</option>
-                        <option value="servico">Serviço</option>
-                        <option value="evento">Evento</option>
-                    </select>
-                </div>
-
-                <div class="formulario__container__conteudo">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem"></textarea>
-                    <span></span>
-                </div>
-
-                <input type="hidden" name="_next" value="projeto-seu-vale.vercel.app/agradecimento.html">
-
-                <input type="hidden" name="_autoresponse" value="Seu email foi recebido com sucessso!">
-
-                <input type="hidden" name="_template" value="box">
-
-                <button type="submit" class="formulario__container__botao">Enviar</button>
-            </form>
-
-        </section>
+        </div>
 
         <footer class="rodape">
             <p class="rodape__texto">&copy; 2025 Seu Bairro. Todos os direitos reservados. Desenvolvido por <a
@@ -169,7 +119,10 @@
 
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/validator@13.9.0/validator.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
     <script type="module" src="scripts/script.js"></script>
 </body>
 
