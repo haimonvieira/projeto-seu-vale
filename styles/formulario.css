@@ -67,6 +67,7 @@
 
 .formulario__container__conteudo--erro input, .formulario__container__conteudo--erro textarea{
     border: 2px solid red;
+    animation: shake .5s;
 }
 
 .formulario__container__conteudo--erro span{

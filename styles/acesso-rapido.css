@@ -24,7 +24,6 @@
     animation-fill-mode: forwards;
     animation-delay: 1s;
     transition: all .3s ease-in-out;
-    width: max-content;
 
 }
 
